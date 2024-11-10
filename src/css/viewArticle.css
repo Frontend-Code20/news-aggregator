@@ -1,0 +1,54 @@
+.view-article-container{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    padding: 50px 50px 100px 50px;
+    box-sizing: border-box;
+    overflow: auto; 
+}
+
+
+.view-article-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.vw-art-hd-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.view-art-back-btn, .share-art-icon{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.view-article-footer{
+    width: 100%;
+    border-bottom: 1px solid #4db6ac;
+    padding-bottom: 20px;
+}
+.view-art-ft-box{
+    display: flex;
+    gap: 50px;
+}
+
+.ft-icon{
+    width: 24px;
+    height: 24px;
+}
+.ft-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .view-article-container{
+        padding: 10px;
+    }
+}

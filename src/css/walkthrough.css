@@ -1,0 +1,128 @@
+
+ /* images slide css */
+.slider-wrapper{
+    width: 67%;
+    height: 100%;
+}
+
+.slide-container {
+    background-color: #4DB6AC;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.slides{
+    height: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+.slide{
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide-image{
+    position: relative;
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    z-index: 1;
+}
+.design-box{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    bottom: 0px;
+    left: 0px;
+    border-top-left-radius: 300px;
+    background-color: #3d3d3d;
+    z-index: 2;
+}
+.slide-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    bottom: 90px;
+    color: #fff;
+}
+.slide-heading{
+    margin: 10px;
+}
+.slide-desc{
+    width: 340px;
+    margin: 0px;
+    text-align: center;
+}
+.btn-box{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.slide-btn{
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: #4DB6AC;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.indicators-box{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    bottom: 90px;
+    left: 0px;
+}
+.indicators{
+    display: flex;
+    gap: 10px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.active{
+    background-color: #4DB6AC;
+}
+.walkthrough-skip{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media only screen and (max-width: 480px){
+    
+    .slide{
+        height: 100%;
+    }
+    .slide-image{
+        width: 350px;
+    }
+    .design-box{
+        border-top-left-radius: 150px;
+    }
+    .slide-text{
+        bottom: 45px;
+    }
+
+}

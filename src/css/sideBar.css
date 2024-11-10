@@ -1,0 +1,22 @@
+.side-bar{
+    position: relative;
+    width: 15%;
+    height: 100vh;
+    background-color: #012447;
+    color: #fff;
+    padding: 20px;
+    z-index: 2;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.side-bar-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-image{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}

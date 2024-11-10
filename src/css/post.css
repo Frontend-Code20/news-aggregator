@@ -1,0 +1,98 @@
+.post-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0px 100px 0px;
+    color: #fff;
+    overflow: auto;
+}
+.post-card{
+    display: flex;
+    position: relative;
+    width: 400px;
+    flex-wrap: wrap;
+}
+.post-card-header{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.source-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bookmark-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+.source-icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.news-content{
+    cursor: pointer;
+}
+
+.post-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border-top: 1px solid #4DB6AC;
+}
+.news-image{
+    width: 100%;
+    height: 240px;
+}
+.like-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.like-icon, .read-icon, .share-icon{
+    width: 24px;
+    height: 24px;
+}
+.like-icon{
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+.liked{
+    fill: red;
+}
+.bookmarked{
+    fill: #4db6ac;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .post-container{
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .post-container{
+        height: 100%;
+    }
+    .post-card{
+        padding: 0 15px 0 15px;
+    }    
+}

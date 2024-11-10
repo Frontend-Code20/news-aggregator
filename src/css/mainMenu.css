@@ -1,0 +1,34 @@
+.main-menu-box{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #001F3F;
+    z-index: 1;
+}
+.main-menu-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.main-menu-item{
+    text-decoration: none;
+    color: #c7c6c6;
+    background-color: transparent;
+    cursor: pointer;
+}
+.active{
+    color: #fff;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .main-menu-box{
+        z-index: 2;
+    }
+
+}
