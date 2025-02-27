@@ -46,15 +46,17 @@ This will create a frontend folder with the basic React project setup.
 ### **Step 3: Install Required Dependencies**
 Inside the `frontend` folder, install the necessary dependencies for the project:
 ```bash
+-> npm install axios
 -> npm install react-redux
 -> npm install @reduxjs/toolkit
 -> npm install react-router
--> npm install axios
+-> npm install -D tailwindcss@3
 ```
 
 ### **Step 4: Replace the Default `src` Folder**
 1. Inside the `frontend` folder, you will find a `src` folder that was created by `create-react-app`. You need to replace this `src` folder with the `src` folder from the project you downloaded.
 2. Delete the existing `src` folder inside `frontend`, and then copy the `src` folder from your downloaded project into the `frontend` folder.
+3. For the Tailwind CSS configuration, copy the `tailwind.config.js` file from the downloaded folder and paste it into the `frontend` folder. 
 
 ### **Step 5: Run the React App**
 Now you can start the React development server and view the app in your browser.
@@ -63,8 +65,52 @@ Now you can start the React development server and view the app in your browser.
 ```
 This will start the app at http://localhost:3000 by default.
 
+## Data Formats
+
+### **1. Post Object**
+```json
+    {
+        "newsID": "",
+        "sourceName": "",
+        "sourceIcon": "",
+        "sourceImage": "",
+        "sourceTitle": "",
+        "sourceDescription": "",
+        "fullArticle": " ",
+        "likes": 0,
+        "reads": 0,
+        "comments": [{
+            "userName":"",
+            "userImage": "",
+            "comment": ""
+        }]
+    },
+``` 
+
+### **2. User Object**
+```json
+    {
+        "userName": "",
+        "userImage": "",
+        "bookmarks": []
+    }
+```
+
 ## License
 This project is licensed under the **MIT License**
 
 ## Project Preview
-![Explore page]()
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/explore.png)
+![Articles page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/articles.png)
+![Search page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/search.png)
+![View Article page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/article.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/tabExplore.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/tabArticles.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/tabSearch.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/tabArticle.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/phoneExplore.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/phoneSearch.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/phoneArticles.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/phoneArticle.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/login.png)
+![Explore page](https://github.com/Frontend-Code20/news-aggregator/blob/main/frontend/public/assets/signup.png)
