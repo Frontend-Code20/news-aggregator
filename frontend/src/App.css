@@ -1,0 +1,19 @@
+#root{
+    width: 100%;
+    height: 100vh;
+}
+.scrollbar-x-2::-webkit-scrollbar {
+    height: 2px;
+}
+
+.scrollbar-x-2::-webkit-scrollbar-thumb{
+    background-color: #F6E8DF;
+}
+
+.scrollbar-y-2::-webkit-scrollbar {
+    width: 2px;
+}
+
+.scrollbar-y-2::-webkit-scrollbar-thumb{
+    background-color: #F6E8DF;
+}
